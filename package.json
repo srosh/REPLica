@@ -10,8 +10,9 @@
       "email": "srosh@me.com"
     } 
   ],
-  "bin": {
-    "replica": "./replica.js"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srosh/REPLica.git"
   },
   "scripts": {
     "start": "node replica.js"

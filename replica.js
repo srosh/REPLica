@@ -15,9 +15,9 @@ try {
   settings = require('./settings.json') 
 } catch (e) {
   console.warn('Couldn\'t load settings.json\n',e);
-  settings = {port:80,server:'localhost',dir:'playground',folding:{level:0},io:{loglevel:1},history:{max:33}};
+  settings = {port:8033,server:'localhost',dir:'playground',folding:{level:0},io:{loglevel:1},history:{max:33}};
 }
-if(process.argv[2]) settings.dir=process.argv[2];
+// if(process.argv[2]) settings.dir=process.argv[2]; // set working dir from argv?
 io.set('log level', settings.io.loglevel);
 server.listen(settings.port);
 console.log("REPLica started listening on port "+settings.port);
