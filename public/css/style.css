@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+article#main {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+}
+div#editorContainer.closed {
+	height: 0%;
+}
+div#editorContainer {
+	position: relative;
+	height: 50%;
+	width: 100%;
+}
+div#editor { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	overflow: auto;
+}
+div#outputContainer {
+	position: relative;
+	height: 50%;
+	width: 100%;
+	overflow: auto;
+	font-family: monospace;
+}
+div#output {
+	white-space: pre-wrap;
+	display: block;
+	padding: .5em;
+	padding-left: 1.5em;
+}
+#input {
+	width: 100%;
+}
+#output > * {
+	display: block;
+}
+span.collapsed>ul li {
+	display: inline-block;
+}
+span.collapsed>ul {
+	display: none;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+span.collapsed.expanded.function>span.closer {
+	border-bottom-left-radius: .5em;
+	padding-bottom: .3em;
+	background-color: #073642;
+}
+span.collapsed.expanded.function>ul {
+	padding: .5em;
+	vertical-align: top;
+	border-radius: .5em;
+	border-top-left-radius: 0;
+	background-color: #073642;
+}
+span.collapsed.function>ul>li{
+	display: block;
+}
+span.collapsed.expanded>span.description,
+span.collapsed>span.closer {
+	display: none;
+}
+span.collapsed>span.description,
+span.collapsed.expanded>ul,
+span.collapsed.expanded>span.closer {
+	display: inline-block;
+}
+a {
+	text-decoration: none;
+}
+a.collapsed.expanded p.trace {
+	display: block;
+}
+/*a.collapsed:hover p.trace {
+	display: block;
+}*/
+.collapsed {
+	cursor: pointer;
+	cursor: hand;
+}
+a.collapsed p.trace {
+	cursor: text;
+	display: none;
+	position: relative;
+	padding: .5em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	border-radius: .5em;
+}
+div#output>span{
+	display: inline;
+}
+span.undefined ,
+span.null {  /*base01*/
+	color: #586e75;
+}
+span.number {
+	color: #dc322f;
+}
+span.keyname {
+	color: #2aa198;
+}
+span.string {
+	color: #859900;
+}
+span.boolean {
+	color: #b58900;
+}
+span.object {
+	color: #2aa198;
+}
+span.array {
+	color: #268bd2;
+}
+span.circular,
+span.function {
+	color: #93a1a1;
+}
+::selection *::selection {
+	background: transparent;
+}

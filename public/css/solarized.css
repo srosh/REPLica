@@ -1,0 +1,165 @@
+/* foreground color */
+.colorbase03 {
+	color: #002b36;
+}
+.colorbase02 {
+	color: #073642;
+}
+.colorbase01 {
+	color: #586e75;
+}
+.colorbase00 {
+	color: #657b83;
+}
+.colorbase0 {
+	color: #839496;
+}
+.colorbase1 {
+	color: #93a1a1;
+}
+.colorbase2 {
+	color: #eee8d5;
+}
+.colorbase3 {
+	color: #fdf6e3;
+}
+.coloryellow {
+	color: #b58900;
+}
+.colororange {
+	color: #cb4b16;
+}
+.colorred {
+	color: #dc322f;
+}
+.colormagenta {
+	color: #d33682;
+}
+.colorviolet {
+	color: #6c71c4;
+}
+.colorblue {
+	color: #268bd2;
+}
+.colorcyan {
+	color: #2aa198;
+}
+.colorgreen {
+	color: #859900;
+}
+
+/* background color */
+.bgcolorbase03 {
+	background-color: #002b36;
+}
+.bgcolorbase02 {
+	background-color: #073642;
+}
+.bgcolorbase01 {
+	background-color: #586e75;
+}
+.bgcolorbase00 {
+	background-color: #657b83;
+}
+.bgcolorbase0 {
+	background-color: #839496;
+}
+.bgcolorbase1 {
+	background-color: #93a1a1;
+}
+.bgcolorbase2 {
+	background-color: #eee8d5;
+}
+.bgcolorbase3 {
+	background-color: #fdf6e3;
+}
+.bgcoloryellow {
+	background-color: #b58900;
+}
+.bgcolororange {
+	background-color: #cb4b16;
+}
+.bgcolorred {
+	background-color: #dc322f;
+}
+.bgcolormagenta {
+	background-color: #d33682;
+}
+.bgcolorviolet {
+	background-color: #6c71c4;
+}
+.bgcolorblue {
+	background-color: #268bd2;
+}
+.bgcolorcyan {
+	background-color: #2aa198;
+}
+.bgcolorgreen {
+	background-color: #859900;
+}
+
+/* selection color */
+.selcolorbase03::selection, .selcolorba.selcolorbase03::selection,  *.selcolorbase03::-moz-selection  *.selcolorbase03 *::-moz-selection {
+	background-color: #002b36;
+	color: #fdf6e3;
+}
+.selcolorbase02::selection,.selcolorbase02 *::selection, .selcolorbase02::-moz-selection, .selcolorbase02 *::-moz-selection {
+	background-color: #073642;
+	color: #fdf6e3;
+}
+.selcolorbase01::selection,.selcolorbase01 *::selection, .selcolorbase01::-moz-selection, .selcolorbase01 *::-moz-selection {
+	background-color: #586e75;
+	color: #fdf6e3;
+}
+.selcolorbase00::selection,.selcolorbase00 *::selection, .selcolorbase00::-moz-selection, .selcolorbase00 *::-moz-selection {
+	background-color: #657b83;
+	color: #fdf6e3;
+}
+.selcolorbase0::selection,.selcolorbase0 *::selection, .selcolorbase0::-moz-selection, .selcolorbase0 *::-moz-selection {
+	background-color: #839496;
+	color: #002b36;
+}
+.selcolorbase1::selection,.selcolorbase1 *::selection, .selcolorbase1::-moz-selection, .selcolorbase1 *::-moz-selection {
+	background-color: #93a1a1;
+	color: #002b36;
+}
+.selcolorbase2::selection,.selcolorbase2 *::selection, .selcolorbase2::-moz-selection, .selcolorbase2 *::-moz-selection {
+	background-color: #eee8d5;
+	color: #002b36;
+}
+.selcolorbase3::selection,.selcolorbase3 *::selection, .selcolorbase3::-moz-selection, .selcolorbase3 *::-moz-selection {
+	background-color: #fdf6e3;
+	color: #002b36;
+}
+.selcoloryellow::selection,.selcoloryellow *::selection, .selcoloryellow::-moz-selection, .selcoloryellow *::-moz-selection {
+	background-color: #b58900;
+	color: #fdf6e3;
+}
+.selcolororange::selection,.selcolororange *::selection, .selcolororange::-moz-selection, .selcolororange *::-moz-selection {
+	background-color: #cb4b16;
+	color: #fdf6e3;
+}
+.selcolorred::selection,.selcolorred *::selection, .selcolorred::-moz-selection, .selcolorred *::-moz-selection {
+	background-color: #dc322f;
+	color: #fdf6e3;
+}
+.selcolormagenta::selection,.selcolormagenta *::selection, .selcolormagenta::-moz-selection, .selcolormagenta *::-moz-selection {
+	background-color: #d33682;
+	color: #fdf6e3;
+}
+.selcolorviolet::selection,.selcolorviolet *::selection, .selcolorviolet::-moz-selection, .selcolorviolet *::-moz-selection {
+	background-color: #6c71c4;
+	color: #fdf6e3;
+}
+.selcolorblue::selection,.selcolorblue *::selection, .selcolorblue::-moz-selection, .selcolorblue *::-moz-selection {
+	background-color: #268bd2;
+	color: #fdf6e3;
+}
+.selcolorcyan::selection,.selcolorcyan *::selection, .selcolorcyan::-moz-selection, .selcolorcyan *::-moz-selection {
+	background-color: #2aa198;
+	color: #fdf6e3;
+}
+.selcolorgreen::selection,.selcolorgreen *::selection, .selcolorgreen::-moz-selection, .selcolorgreen *::-moz-selection {
+	background-color: #859900;
+	color: #fdf6e3;
+}

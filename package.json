@@ -1,0 +1,34 @@
+{
+  "name": "REPLica",
+  "preferGlobal": false,
+  "version": "0.1.0",
+  "author": "Soroosh Izadian <srosh@me.com>",
+  "description": "a Nodejs REPL server",
+  "contributors": [ 
+    {
+      "name": "Soroosh Izadian",
+      "email": "srosh@me.com"
+    } 
+  ],
+  "bin": {
+    "replica": "./replica.js"
+  },
+  "scripts": {
+    "start": "node replica.js"
+  },
+  "main": "./replica.js",
+  "keywords": [
+    "repl",
+    "http",
+    "replica"
+  ],
+  "dependencies" : {
+    "express"   :  "3.1.0",
+    "socket.io" :  "0.9.x"
+  },
+  "analyze": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8"
+  }
+}
