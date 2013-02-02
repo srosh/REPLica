@@ -3,7 +3,7 @@ REPLica: NodeJS REPL + ACE
 REPlica is a NodeJS REPL server with multiline input and code folding for objects and arrays in console.
 
 ### Installation
-Clone from git and run `npm install` to get the dependencies
+Clone from git repo and run `npm install` to get the dependencies
 
 	$ git clone git://github.com/srosh/REPLica.git
 	$ cd REPLica
