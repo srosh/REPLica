@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Replica by srosh</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Replica</h1>
+        <p class="header"></p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/srosh/REPLica/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/srosh/REPLica/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/srosh/REPLica">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/srosh">srosh</a></p>
+
+
+      </header>
+      <section>
+        <h1>REPLica: NodeJS REPL + ACE Editor and an interactive console</h1>
+
+<p>REPlica is a NodeJS REPL server with multiline input and code folding for objects and arrays in console.</p>
+
+<h3>Installation</h3>
+
+<p>Clone from git repo and run <code>npm install</code> to get the dependencies</p>
+
+<pre><code>$ git clone git://github.com/srosh/REPLica.git
+$ cd REPLica
+REPLica$ npm install
+</code></pre>
+
+<h3>Usage</h3>
+
+<p>Run replica from the directory by <code>npm start</code> or <code>node replica</code></p>
+
+<pre><code>REPLica$ npm start
+</code></pre>
+
+<p>or</p>
+
+<pre><code>REPLica$ node replica
+</code></pre>
+
+<p>By default REPLica tries to listen to port 8033 on localhost you can change this in <code>settings.json</code>.</p>
+
+<p>Then just navigate your web browser to <a href="http://localhost:8033">http://localhost:8033</a>.</p>
+
+<p>Write your code in the editor (bottom) and press <code>cmd+Return</code> (<code>ctrl+Return</code> in Windows) to run it.</p>
+
+<p>You can use <code>cmd+Up</code> or <code>cmd+Down</code> ( <code>ctrl+Up</code> / <code>ctrl+Down</code> for Windows ) to go through sent codes.</p>
+
+<p>Almost everything else is like the Node REPL except that you can in interact with objects and arrays printed out in the console.</p>
+
+<p>Clicking on <code>{</code> <code>}</code> or <code>[</code> <code>]</code> expands/collapses the representation. Also clicking on Array members or Object keys inserts the key at cursor in the editor.</p>
+
+<h3>Extra REPL Commands</h3>
+
+<p><code>.read file</code> loads a file into the editor instead of evaluating it (like <code>.load</code> does)</p>
+
+<pre><code>.read /path/to/file.js
+</code></pre>
+
+<p><code>.def obj</code> copies the definition of a function or object/array data into the editor</p>
+
+<pre><code>var obj = { a : [ 1, 2, 3, [4]] }
+.def obj
+</code></pre>
+
+<p><code>.export name</code> exports the current context and makes it accessible to other instances of replica</p>
+
+<pre><code>.export context1
+</code></pre>
+
+<p><code>.import name</code> imports another context ( name ) to a variable in current context with the same name</p>
+
+<pre><code>.import context1
+</code></pre>
+
+<p>So you can use that context's variables etc. in current context. For example</p>
+
+<pre><code>context1.console.log('hello context1');
+</code></pre>
+
+<p>shows <code>'hello context1'</code> in the exported context <code>context1</code></p>
+
+<h3>Demo</h3>
+
+<p>You can try out REPLica <a href="http://replica.srosh.com">here</a></p>
+
+<hr><h3>License</h3>
+
+<p>MIT</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		          <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-38209812-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
