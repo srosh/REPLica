@@ -1,4 +1,4 @@
-REPLica: NodeJS REPL + ACE
+REPLica: NodeJS REPL + ACE Editor and an interactive console
 ===
 REPlica is a NodeJS REPL server with multiline input and code folding for objects and arrays in console.
 
@@ -32,7 +32,7 @@ Almost everything else is like the Node REPL except that you can in interact wit
 Clicking on `{` `}` or `[` `]` expands/collapses the representation. Also clicking on Array members or Object keys inserts the key at cursor in the editor.
 
 ### Extra REPL Commands
-`.read file` loads a file to the editor
+`.read file` loads a file into the editor instead of evaluating it (like `.load` does)
 
 	.read /path/to/file.js
 
@@ -54,10 +54,8 @@ So you can use that context's variables etc. in current context. For example
 	context1.console.log('hello context1');
 
 shows `'hello context1'` in the exported context `context1`
-
-
-
-
+### Demo
+You can try out REPLica [here](http://replica.srosh.com)
 ***
 ### License
 MIT
