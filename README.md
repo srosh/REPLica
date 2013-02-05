@@ -9,6 +9,10 @@ Clone from git repo and run `npm install` to get the dependencies
 	$ cd REPLica
 	REPLica$ npm install
 
+or install from `npm`
+
+    $ npm install replica-js
+
 ### Usage
 Run replica from the directory by `npm start` or `node replica`
 
